@@ -49,7 +49,8 @@ def sinesp(placa):
         + result['status_message'] + "\n" + result['chassis'])
 
 while (True):
-    aux = input("Imagem: ")
+#    aux = input("Imagem: ")      #python3
+    aux = raw_input("Imagem: ")  #python2.7
     try:
     	resize(aux)
     except:
